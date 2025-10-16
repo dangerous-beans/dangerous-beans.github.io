@@ -1,3 +1,20 @@
 body {
     background-color: #af2873;
 }
+
+
+.posts {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.bluesky-embed {
+    width: 600px;
+    /* background-color: red; */
+}
