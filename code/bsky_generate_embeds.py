@@ -3,7 +3,7 @@ import random
 import requests
 
 OUT_FILE = "embeds.html"
-RANDOM_SEED = 42
+RANDOM_SEED = 43
 
 
 def get_embed_html(post_url):

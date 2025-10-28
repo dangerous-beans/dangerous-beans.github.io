@@ -12,10 +12,3 @@ body {
     justify-content: center;
     padding: 20px;
 }
-
-
-.posts .bluesky-embed {
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
