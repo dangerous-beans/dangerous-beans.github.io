@@ -1,0 +1,689 @@
+@font-face {
+  font-family: 'support-icons';
+  src:
+    url('https://cdn.icomoon.io/225569/SSR/support-icons.woff2?re6iff') format('woff2'),
+    url('https://cdn.icomoon.io/225569/SSR/support-icons.ttf?re6iff') format('truetype'),
+    url('https://cdn.icomoon.io/225569/SSR/support-icons.woff?re6iff') format('woff'),
+    url('https://cdn.icomoon.io/225569/SSR/support-icons.svg?re6iff#support-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="support-icon-"], [class*=" support-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'support-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.support-icon-som-icon:before {
+  content: "\e9d4";
+}
+.support-icon-pos-icon:before {
+  content: "\e9d5";
+}
+.support-icon-app-support:before {
+  content: "\e9c1";
+}
+.support-icon-app-nintendo-switch-pc:before {
+  content: "\e9c2";
+}
+.support-icon-other-prod:before {
+  content: "\e9c3";
+}
+.support-icon-other-prod-issues:before {
+  content: "\e9c4";
+}
+.support-icon-apps-other-prod:before {
+  content: "\e9c5";
+}
+.support-icon-legacy-systems:before {
+  content: "\e9c6";
+}
+.support-icon-mobile-games:before {
+  content: "\e9c7";
+}
+.support-icon-nintendo-switch-2-games:before {
+  content: "\e9c8";
+}
+.support-icon-nso-membership-subscription:before {
+  content: "\e9c9";
+}
+.support-icon-repair:before {
+  content: "\e9ca";
+}
+.support-icon-smart-device-app-support:before {
+  content: "\e9cb";
+}
+.support-icon-docs-policies:before {
+  content: "\e9cc";
+}
+.support-icon-order-status:before {
+  content: "\e9cd";
+}
+.support-icon-repair-status:before {
+  content: "\e9ce";
+}
+.support-icon-using-troubleshooting:before {
+  content: "\e9cf";
+}
+.support-icon-vgc-nintendo-switch:before {
+  content: "\e9d0";
+}
+.support-icon-vgc-nintendo-switch-2:before {
+  content: "\e9d1";
+}
+.support-icon-nintendo-switch-logo:before {
+  content: "\e9d2";
+}
+.support-icon-nintendo-switch-2-logo:before {
+  content: "\e9d3";
+}
+.support-icon-Dpad:before {
+  content: "\e9bf";
+}
+.support-icon-SwitchJoyCon:before {
+  content: "\e9c0";
+}
+.support-icon-circle-video:before {
+  content: "\e9be";
+}
+.support-icon-pin:before {
+  content: "\e9bd";
+}
+.support-icon-alarm:before {
+  content: "\e9bc";
+}
+.support-icon-doc-pt:before {
+  content: "\e9b8";
+}
+.support-icon-doc-fr:before {
+  content: "\e9b9";
+}
+.support-icon-doc-es:before {
+  content: "\e9ba";
+}
+.support-icon-doc-en:before {
+  content: "\e9bb";
+}
+.support-icon-doc-blank:before {
+  content: "\e9b7";
+  color: #484848;
+}
+.support-icon-chatbot:before {
+  content: "\e9b6";
+  color: #484848;
+}
+.support-icon-exclamation-solid-2:before {
+  content: "\e9b5";
+}
+.support-icon-internal-only:before {
+  content: "\e9b4";
+}
+.support-icon-camera:before {
+  content: "\e9b1";
+}
+.support-icon-gral:before {
+  content: "\e9b2";
+}
+.support-icon-adyen:before {
+  content: "\e9a7";
+}
+.support-icon-hookshot:before {
+  content: "\e9a8";
+}
+.support-icon-magento:before {
+  content: "\e9a9";
+}
+.support-icon-mize:before {
+  content: "\e9aa";
+}
+.support-icon-navi:before {
+  content: "\e9ab";
+}
+.support-icon-ope:before {
+  content: "\e9ac";
+}
+.support-icon-other:before {
+  content: "\e9ad";
+}
+.support-icon-pinreset:before {
+  content: "\e9ae";
+}
+.support-icon-pit:before {
+  content: "\e9af";
+}
+.support-icon-repo:before {
+  content: "\e9b0";
+}
+.support-icon-minus1:before {
+  content: "\e9a1";
+}
+.support-icon-plus1:before {
+  content: "\e9a2";
+}
+.support-icon-close-circle1:before {
+  content: "\e9a3";
+}
+.support-icon-hard-stop:before {
+  content: "\e9a4";
+}
+.support-icon-i-solid:before {
+  content: "\e9a5";
+}
+.support-icon-chevron-thin:before {
+  content: "\e9a6";
+}
+.support-icon-tooltip-open-circle:before {
+  content: "\e9a0";
+}
+.support-icon-question-mark:before {
+  content: "\e9b3";
+}
+.support-icon-repair-faq:before {
+  content: "\e988";
+}
+.support-icon-repair-check-warranty:before {
+  content: "\e995";
+}
+.support-icon-tooltip:before {
+  content: "\e929";
+}
+.support-icon-youtube:before {
+  content: "\e618";
+}
+.support-icon-twitter:before {
+  content: "\e619";
+}
+.support-icon-tumbler:before {
+  content: "\e61a";
+}
+.support-icon-instagram:before {
+  content: "\e61b";
+}
+.support-icon-facebook:before {
+  content: "\e61c";
+}
+.support-icon-nintendo:before {
+  content: "\e61d";
+}
+.support-icon-audio-video:before {
+  content: "\e900";
+}
+.support-icon-audio-video-touch:before {
+  content: "\e901";
+}
+.support-icon-nintendo-ds:before {
+  content: "\e902";
+}
+.support-icon-nintendo-ds-play-online:before {
+  content: "\e903";
+}
+.support-icon-circle-flag:before {
+  content: "\e904";
+}
+.support-icon-circle-check:before {
+  content: "\e905";
+}
+.support-icon-circle-question:before {
+  content: "\e906";
+}
+.support-icon-access-account:before {
+  content: "\e907";
+}
+.support-icon-accounts-link:before {
+  content: "\e908";
+}
+.support-icon-accounts-transfer:before {
+  content: "\e909";
+}
+.support-icon-set-up-accounts:before {
+  content: "\e90a";
+}
+.support-icon-bang-circle:before {
+  content: "\e90b";
+}
+.support-icon-play-circle:before {
+  content: "\e90c";
+}
+.support-icon-speaker:before {
+  content: "\e90d";
+}
+.support-icon-blocked:before {
+  content: "\e90e";
+}
+.support-icon-caret-down:before {
+  content: "\e90f";
+}
+.support-icon-caret-left:before {
+  content: "\e910";
+}
+.support-icon-caret-right:before {
+  content: "\e911";
+}
+.support-icon-caret-up:before {
+  content: "\e912";
+}
+.support-icon-plus:before {
+  content: "\e913";
+}
+.support-icon-minus:before {
+  content: "\e914";
+}
+.support-icon-bullet:before {
+  content: "\e915";
+}
+.support-icon-charging:before {
+  content: "\e916";
+}
+.support-icon-x-thin:before {
+  content: "\e917";
+}
+.support-icon-exit:before {
+  content: "\e918";
+}
+.support-icon-home:before {
+  content: "\e919";
+}
+.support-icon-lifesaver:before {
+  content: "\e91a";
+}
+.support-icon-print:before {
+  content: "\e91b";
+}
+.support-icon-agent-say:before {
+  content: "\e91c";
+}
+.support-icon-sound-off:before {
+  content: "\e91d";
+}
+.support-icon-sound-on:before {
+  content: "\e91e";
+}
+.support-icon-check:before {
+  content: "\e91f";
+}
+.support-icon-speech-bubbles:before {
+  content: "\e920";
+}
+.support-icon-chevron-down:before {
+  content: "\e921";
+}
+.support-icon-chevron-left:before {
+  content: "\e922";
+}
+.support-icon-chevron-right:before {
+  content: "\e923";
+}
+.support-icon-chevron-up:before {
+  content: "\e924";
+}
+.support-icon-classic-series-games:before {
+  content: "\e925";
+}
+.support-icon-nes-controller:before {
+  content: "\e926";
+}
+.support-icon-clock:before {
+  content: "\e927";
+}
+.support-icon-close-circle:before {
+  content: "\e928";
+}
+.support-icon-signal:before {
+  content: "\e92a";
+}
+.support-icon-monitor:before {
+  content: "\e92b";
+}
+.support-icon-creators-program:before {
+  content: "\e92c";
+}
+.support-icon-csr:before {
+  content: "\e92d";
+}
+.support-icon-damage-liquid:before {
+  content: "\e92e";
+}
+.support-icon-damage-physical:before {
+  content: "\e92f";
+}
+.support-icon-download:before {
+  content: "\e930";
+}
+.support-icon-accounts-manage:before {
+  content: "\e931";
+}
+.support-icon-email:before {
+  content: "\e932";
+}
+.support-icon-bag:before {
+  content: "\e933";
+}
+.support-icon-external:before {
+  content: "\e934";
+}
+.support-icon-question-block:before {
+  content: "\e935";
+}
+.support-icon-smile:before {
+  content: "\e936";
+}
+.support-icon-open-package:before {
+  content: "\e937";
+}
+.support-icon-hamburger:before {
+  content: "\e938";
+}
+.support-icon-info-circle:before {
+  content: "\e939";
+}
+.support-icon-internet-globe:before {
+  content: "\e93a";
+}
+.support-icon-scales:before {
+  content: "\e93b";
+}
+.support-icon-lightbulb:before {
+  content: "\e93c";
+}
+.support-icon-credit-card:before {
+  content: "\e93d";
+}
+.support-icon-miiverse-characters:before {
+  content: "\e93e";
+}
+.support-icon-accounts-nintendo-nnid:before {
+  content: "\e93f";
+}
+.support-icon-my-nintendo:before {
+  content: "\e940";
+}
+.support-icon-my-nintendo-missions:before {
+  content: "\e941";
+}
+.support-icon-my-nintendo-points:before {
+  content: "\e942";
+}
+.support-icon-amiibo:before {
+  content: "\e943";
+}
+.support-icon-luigi:before {
+  content: "\e944";
+}
+.support-icon-contact-channels:before {
+  content: "\e945";
+}
+.support-icon-nintendo-3ds-play-online:before {
+  content: "\e946";
+}
+.support-icon-text-bubbles:before {
+  content: "\e947";
+}
+.support-icon-eshop-download:before {
+  content: "\e948";
+}
+.support-icon-eshop-manage:before {
+  content: "\e949";
+}
+.support-icon-eshop-overview:before {
+  content: "\e94a";
+}
+.support-icon-lakitu:before {
+  content: "\e94b";
+}
+.support-icon-nintendo-switch-apps:before {
+  content: "\e94c";
+}
+.support-icon-signal-2:before {
+  content: "\e94d";
+}
+.support-icon-luigi-leap:before {
+  content: "\e94e";
+}
+.support-icon-games-apps:before {
+  content: "\e94f";
+}
+.support-icon-nintendo-ds-accesories:before {
+  content: "\e950";
+}
+.support-icon-nintendo-ds-dsi-games:before {
+  content: "\e951";
+}
+.support-icon-nintendo-3ds:before {
+  content: "\e952";
+}
+.support-icon-nintendo-accounts:before {
+  content: "\e953";
+}
+.support-icon-peach:before {
+  content: "\e954";
+}
+.support-icon-nintendo-dsi:before {
+  content: "\e955";
+}
+.support-icon-pro-controller:before {
+  content: "\e956";
+}
+.support-icon-repairs-truck-question:before {
+  content: "\e957";
+}
+.support-icon-nintendo-switch-games:before {
+  content: "\e958";
+}
+.support-icon-nintendo-switch-online:before {
+  content: "\e959";
+}
+.support-icon-nintendo-switch-play-online:before {
+  content: "\e95a";
+}
+.support-icon-nintendo-switch:before {
+  content: "\e95b";
+}
+.support-icon-nnid:before {
+  content: "\e95c";
+}
+.support-icon-x-thick:before {
+  content: "\e95d";
+}
+.support-icon-cart:before {
+  content: "\e95e";
+}
+.support-icon-d-pad:before {
+  content: "\e95f";
+}
+.support-icon-parental-controls-reset:before {
+  content: "\e960";
+}
+.support-icon-parental-controls-settings:before {
+  content: "\e961";
+}
+.support-icon-parental-controls:before {
+  content: "\e962";
+}
+.support-icon-phone:before {
+  content: "\e963";
+}
+.support-icon-piracy:before {
+  content: "\e964";
+}
+.support-icon-public-relations:before {
+  content: "\e965";
+}
+.support-icon-dollar-circle:before {
+  content: "\e966";
+}
+.support-icon-checklist:before {
+  content: "\e967";
+}
+.support-icon-repairs:before {
+  content: "\e968";
+}
+.support-icon-router-setup:before {
+  content: "\e969";
+}
+.support-icon-search:before {
+  content: "\e96a";
+}
+.support-icon-settings:before {
+  content: "\e96b";
+}
+.support-icon-sponsorship:before {
+  content: "\e96c";
+}
+.support-icon-ticket:before {
+  content: "\e96d";
+}
+.support-icon-star:before {
+  content: "\e96e";
+}
+.support-icon-transfer-games:before {
+  content: "\e96f";
+}
+.support-icon-videos:before {
+  content: "\e970";
+}
+.support-icon-warning:before {
+  content: "\e971";
+}
+.support-icon-warranty-check:before {
+  content: "\e972";
+}
+.support-icon-sort-direction:before {
+  content: "\e973";
+}
+.support-icon-wii-controller:before {
+  content: "\e974";
+}
+.support-icon-wii:before {
+  content: "\e975";
+}
+.support-icon-wiiu-accessories:before {
+  content: "\e976";
+}
+.support-icon-wiiu-play-online:before {
+  content: "\e977";
+}
+.support-icon-wiiu-wii-games:before {
+  content: "\e978";
+}
+.support-icon-wiiu:before {
+  content: "\e979";
+}
+.support-icon-dollar-triangle:before {
+  content: "\e97a";
+}
+.support-icon-nintendo-3ds-games:before {
+  content: "\e97b";
+}
+.support-icon-nintendo-dsi-play-online:before {
+  content: "\e97c";
+}
+.support-icon-repairs-truck-plus:before {
+  content: "\e97d";
+}
+.support-icon-speech-bubbles-clock:before {
+  content: "\e97e";
+}
+.support-icon-text-bubbles-unavailable:before {
+  content: "\e97f";
+}
+.support-icon-documents-view-all:before {
+  content: "\e980";
+}
+.support-icon-neoclassic:before {
+  content: "\e981";
+}
+.support-icon-paperclip:before {
+  content: "\e982";
+}
+.support-icon-back-arrow:before {
+  content: "\e983";
+}
+.support-icon-volumes:before {
+  content: "\e984";
+}
+.support-icon-links:before {
+  content: "\e985";
+}
+.support-icon-sort:before {
+  content: "\e986";
+}
+.support-icon-add-note:before {
+  content: "\e987";
+}
+.support-icon-nintendo-wii-play-online:before {
+  content: "\e989";
+}
+.support-icon-nso-features:before {
+  content: "\e98a";
+}
+.support-icon-nso-manage:before {
+  content: "\e98b";
+}
+.support-icon-nso-overview:before {
+  content: "\e98c";
+}
+.support-icon-nso-set-up:before {
+  content: "\e98d";
+}
+.support-icon-nso-special-offers:before {
+  content: "\e98e";
+}
+.support-icon-parental-controls-features:before {
+  content: "\e98f";
+}
+.support-icon-parental-controls-info:before {
+  content: "\e990";
+}
+.support-icon-repairs-truck:before {
+  content: "\e991";
+}
+.support-icon-left-quote:before {
+  content: "\e992";
+}
+.support-icon-scissors:before {
+  content: "\e993";
+}
+.support-icon-email-fill:before {
+  content: "\e994";
+}
+.support-icon-game-and-watch:before {
+  content: "\e996";
+}
+.support-icon-plus-circle:before {
+  content: "\e997";
+}
+.support-icon-trashcan:before {
+  content: "\e998";
+}
+.support-icon-pencil-square:before {
+  content: "\e999";
+}
+.support-icon-bang-triangle:before {
+  content: "\e99a";
+}
+.support-icon-exclamation-solid:before {
+  content: "\e99b";
+}
+.support-icon-new-sash:before {
+  content: "\e99c";
+}
+.support-icon-new-speech-bubble:before {
+  content: "\e99d";
+}
+.support-icon-bell-circle:before {
+  content: "\e99e";
+}
+.support-icon-send-repair:before {
+  content: "\e99f";
+}
