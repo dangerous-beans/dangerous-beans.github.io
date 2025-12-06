@@ -9,6 +9,7 @@ requests = "*"
 reloadserver = "*"
 matplotlib = "*"
 numpy = "*"
+scipy = "*"
 
 [dev-packages]
 ipykernel = "*"
