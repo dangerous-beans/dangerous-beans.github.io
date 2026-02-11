@@ -1,5 +1,6 @@
 body {
     background-color: #af2873;
+    color: white;
 }
 
 
@@ -13,12 +14,46 @@ body {
     padding: 20px;
 }
 
-.discordInputMessage {
+textarea {
     resize: none;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 750px;
 }
 
-.discordOutputMessage {
-    resize: none;
-    margin-bottom: 10px;
+.codeReader {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.codeReader h1 {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.codeReader button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.replayCodes {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+
+
+    color: black;
+    font-family: monospace;
+    background-color: white;
+    border-radius: 1em;
+    width: 15em;
 }
