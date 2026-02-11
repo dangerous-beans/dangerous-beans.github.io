@@ -11,6 +11,16 @@
         const re = /[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}/g
         const nintendoUrl = "https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3D"
 
+        function paste() {
+            let textarea = document.getElementById("inputText");
+            navigator.clipboard.readText().then(
+                (text) => {
+                    textarea.value = text;
+                    update();
+                }
+            )
+        }
+
         function copy() {
             let textarea = document.getElementById("outputText");
             textarea.select();
@@ -69,6 +79,7 @@
         <h1>Replay code reader thingy</h1>
         <div>
             <h2>Paste the text containing the replay codes</h2>
+            <button onclick="paste()">Paste from clipboard</button>
             <textarea id="inputText" name="inputText" rows="15" autofocus oninput="update()"></textarea>
         </div>
         <div class="replayCodes" id="codes">The codes be here</div>
