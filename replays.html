@@ -31,9 +31,9 @@
         function update() {
             let inputText = document.getElementById("inputText");
             let inputString = inputText.value
-            const matches = inputString.matchAll(re);
 
             // Update the list of codes
+            let matches = inputString.matchAll(re);
             let codes = document.getElementById("codes");
             codes.innerHTML = "";
             for (const match of matches) {
@@ -47,6 +47,7 @@
             }
 
             // Update the output text
+            matches = inputString.matchAll(re);
             let outputText = document.getElementById("outputText");
             outputText.value = "";
             var lastCode = 0;
