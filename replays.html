@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        const re = /[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}/g
+        const nintendoUrl = "https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3D"
+
+        function copy() {
+            let textarea = document.getElementById("outputText");
+            textarea.select();
+            if (textarea.value) {
+                navigator.clipboard.writeText(textarea.value);
+            } else {
+                navigator.clipboard.writeText(textarea.placeholder);
+            }
+
+
+            let message = document.getElementById("message");
+            if (message.textContent) {
+                if (message.textContent.length > 15) {
+                    message.textContent = message.textContent.concat("?")
+                } else {
+                    message.textContent = message.textContent.concat("!")
+                }
+            } else {
+                message.textContent = "Copied"
+            }
+        }
+
+        function update() {
+            let inputText = document.getElementById("inputText");
+            let inputString = inputText.value
+            let outputText = document.getElementById("outputText");
+            outputText.value = "";
+
+            var lastCode = 0;
+            const matches = inputString.matchAll(re);
+            for (const match of matches) {
+                let code = match[0];
+                let prefix = inputString.slice(lastCode, match.index);
+                let url = nintendoUrl.concat(code)
+                outputText.value = outputText.value.concat(prefix, "[", code, "](", url, ")")
+                lastCode = match.index + code.length;
+            }
+            // Add the last one
+            outputText.value = outputText.value.concat(inputString.slice(lastCode));
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Replay code linker thingy</h1>
+    <textarea class="discordInputMessage" id="inputText" name="inputText" rows="20" cols="100" autofocus placeholder="You can write or paste a message that you intend to send on Discord here, with replays codes like this one RUXR-3XUG-2MR3-RXCK in them.
+
+Below you will get a version of the message that will replace codes (such as this one 
+RKUV-59PN-E7RA-END2) by a link that will open the Splatnet app when clicked on a phone.
+
+The app will then allow you to queue the download, then you can go to the lobby terminal and download them there. No need to type.
+
+Doesn't matter how you format the text, or where the codes are:
+RH04-DGU0-BQEU-NT2S - I won, I think?
+~~RF1L-CCHK-MP66-FKQB - Manta TC - LUTI week 2~~
+This one is funny I guess! asdasdRWTG-10XJ-H41K-2SSG!!!
+
+That's the point of including all those codes in this example.
+" oninput="update()"></textarea>
+    <br>
+    <textarea class="discordOutputMessage" id="outputText" name="outputText" rows="20" cols="100" disabled placeholder="You can write or paste a message that you intend to send on Discord here, with replays codes like this one [RUXR-3XUG-2MR3-RXCK](https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3DRUXR-3XUG-2MR3-RXCK) in them.
+
+Below you will get a version of the message that will replace codes (such as this one 
+[RKUV-59PN-E7RA-END2](https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3DRKUV-59PN-E7RA-END2)) by a link that will open the Splatnet app when clicked on a phone.
+
+The app will then allow you to queue the download, then you can go to the lobby terminal and download them there. No need to type.
+
+Doesn't matter how you format the text, or where the codes are:
+[RH04-DGU0-BQEU-NT2S](https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3DRH04-DGU0-BQEU-NT2S) - I won, I think?
+[RF1L-CCHK-MP66-FKQB](https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3DRF1L-CCHK-MP66-FKQB) - Manta TC - LUTI week 2
+This one is funny I guess! asdasd[RWTG-10XJ-H41K-2SSG](https://s.nintendo.com/av5ja-lp1/znca/game/4834290508791808?p=%2Freplay%3Fcode%3DRWTG-10XJ-H41K-2SSG)!!!
+
+That's the point of including all those codes in this example.
+"></textarea>
+    <br>
+    <button onclick="copy()">Copy to clipboard</button>
+    <span id="message"></span>
+</body>
