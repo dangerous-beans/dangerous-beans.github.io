@@ -15,10 +15,18 @@
             let textarea = document.getElementById("inputText");
             navigator.clipboard.readText().then(
                 (text) => {
-                    textarea.value = text;
+                    if (textarea.value) {
+                        textarea.value += "\n"
+                    }
+                    textarea.value += text;
                     update();
                 }
             )
+        }
+
+        function clearInput() {
+            let textarea = document.getElementById("inputText");
+            textarea.value = "";
         }
 
         function copy() {
@@ -80,14 +88,15 @@
         <div>
             <h2>Paste the text containing the replay codes</h2>
             <button onclick="paste()">Paste from clipboard</button>
+            <button onclick="clearInput()">Clear</button>
             <textarea id="inputText" name="inputText" rows="15" autofocus oninput="update()"></textarea>
         </div>
         <div class="replayCodes" id="codes">The codes be here</div>
         <div>
             <h2>Text with Discord-compatible links for the codes:</h2>
+            <button onclick="copy()">Copy to clipboard</button>
+            <span id="message"></span>
             <textarea id="outputText" name="outputText" rows="15" disabled></textarea>
         </div>
-        <button onclick="copy()">Copy to clipboard</button>
-        <span id="message"></span>
     </div>
 </body>
